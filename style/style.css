@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.back-link {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.header-content {
+    padding-top: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.header-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    color: #333;
+}
+
+.main-title {
+    background-color: RGB(196, 227, 243);
+    padding: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 1px;
+    /* background-color: #e6f3ff; */
+    border-bottom: 1px solid #dadada;
+}
+
+.info-grid:hover {
+    background: #f5f5f5;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.info-cell {
+    padding: 8px;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px 1fr;
+    gap: 2px;
+    margin-bottom: 2px;
+    /* background-color: #e6f3ff; */
+    border-bottom: 1px solid #dadada;
+
+}
+
+.info-row:hover {
+    background: #f5f5f5;
+}
+
+.info-cell-alt {
+    padding: 8px;
+}
+
+.label {
+    font-weight: 300;
+    color: #333;
+    font-size: 14px;
+}
+
+.value {
+    color: #444;
+    font-size: 14px;
+}
+
+.bengali {
+    font-family: 'SolaimanLipi', Arial, sans-serif;
+}
+
+.qr-code {
+    position: absolute;
+    right: 20px;
+    top: 400px;
+    width: 220px;
+    height: 220px;
+}
+
+.note {
+    margin: 30px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.note a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 12px;
+}
+
+.note span {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+
+    /* Adjust padding and font sizes */
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-title,
+    .header-subtitle {
+        font-size: 14px;
+    }
+
+    /* Adjust info grid and row */
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-row {
+        grid-template-columns: 1fr;
+    }
+
+    .info-cell,
+    .info-cell-alt {
+        text-align: center;
+    }
+
+    .qr-code {
+        position: static;
+        margin: 0 auto;
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Further adjustments for smaller screens */
+    .main-title {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .label,
+    .value {
+        font-size: 12px;
+    }
+
+    .note {
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .back-link {
+        font-size: 12px;
+    }
+}
