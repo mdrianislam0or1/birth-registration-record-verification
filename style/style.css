@@ -1,8 +1,8 @@
+/* Reset and Body Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     position: relative;
 }
 
+/* Header and Back Link Styles */
 .back-link {
     color: #0066cc;
     text-decoration: none;
@@ -63,48 +64,38 @@ body {
     border-top: 1px solid #dadada;
 }
 
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+/* Table Styles */
+.info-table {
+    width: 100%;
     margin-bottom: 1px;
-    /* background-color: #e6f3ff; */
-    border-bottom: 1px solid #dadada;
+    border-collapse: collapse;
 }
 
-.info-grid:hover {
+.info-table tr:hover {
     background: #f5f5f5;
 }
 
-.center {
-    text-align: center;
-}
-
-.right {
-    text-align: right;
-}
-
-.info-cell {
+.info-table td {
     padding: 8px;
-}
-
-.info-row {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px 1fr;
-    gap: 2px;
-    margin-bottom: 2px;
-    /* background-color: #e6f3ff; */
     border-bottom: 1px solid #dadada;
-
 }
 
-.info-row:hover {
+.info-table-info {
+    width: 80%;
+    margin-bottom: 1px;
+    border-collapse: collapse;
+}
+
+.info-table-info tr:hover {
     background: #f5f5f5;
 }
 
-.info-cell-alt {
+.info-table-info td {
     padding: 8px;
+    border-bottom: 1px solid #dadada;
 }
+
+
 
 .label {
     font-weight: 300;
@@ -117,10 +108,20 @@ body {
     font-size: 14px;
 }
 
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Bengali Font */
 .bengali {
     font-family: 'SolaimanLipi', Arial, sans-serif;
 }
 
+/* QR Code */
 .qr-code {
     position: absolute;
     right: 20px;
@@ -129,6 +130,7 @@ body {
     height: 220px;
 }
 
+/* Footer */
 .note {
     margin: 30px 0;
     font-size: 12px;
@@ -158,20 +160,8 @@ body {
     font-style: italic;
 }
 
-
-
-/* Responsive styling */
+/* Responsive Styling */
 @media (max-width: 768px) {
-
-    /* Adjust padding and font sizes */
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
     .header {
         flex-direction: column;
         align-items: center;
@@ -183,20 +173,6 @@ body {
         font-size: 14px;
     }
 
-    /* Adjust info grid and row */
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .info-row {
-        grid-template-columns: 1fr;
-    }
-
-    .info-cell,
-    .info-cell-alt {
-        text-align: center;
-    }
-
     .qr-code {
         position: static;
         margin: 0 auto;
@@ -204,30 +180,8 @@ body {
         width: 150px;
         height: 150px;
     }
-}
 
-@media (max-width: 480px) {
-
-    /* Further adjustments for smaller screens */
-    .main-title {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .label,
-    .value {
-        font-size: 12px;
-    }
-
-    .note {
-        font-size: 10px;
-    }
-
-    .footer {
-        font-size: 10px;
-    }
-
-    .back-link {
+    .info-table {
         font-size: 12px;
     }
 }

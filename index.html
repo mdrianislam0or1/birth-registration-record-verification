@@ -12,7 +12,6 @@
 <body>
     <div class="container">
 
-
         <div class="header">
             <div>
                 <img src="./img/logo.png" alt="Government of Bangladesh Logo" class="logo">
@@ -22,126 +21,82 @@
                 <div class="header-subtitle">LOCAL GOVERNMENT DIVISION</div>
             </div>
         </div>
-        <a href="#" class="back-link">Back to Previous Page</a>
 
+        <a href="#" class="back-link">Back to Previous Page</a>
         <div class="main-title">BIRTH REGISTRATION RECORD VERIFICATION</div>
 
-        <div class="info-grid">
-            <div class="info-cell">
-                <div class="label">REGISTRATION DATE</div>
+        <!-- Use a table for the information grid -->
+        <table class="info-table">
+            <tr>
+                <td class="label">REGISTRATION DATE</td>
+                <td class="label center">REGISTRATION OFFICE</td>
+                <td class="label right">ISSUANCE DATE</td>
+            </tr>
+            <tr>
+                <td class="value">11 FEBRUARY 2019</td>
+                <td class="value center">MANDA UNIONPARISAD</td>
+                <td class="value right">11 FEBRUARY 2019</td>
+            </tr>
+            <tr>
+                <td class="label">DATE OF BIRTH</td>
+                <td class="label center">BIRTH REGISTRATION NUMBER</td>
+                <td class="label right">SEX</td>
+            </tr>
+            <tr>
+                <td class="value">14 MAY 1995</td>
+                <td class="value center">19952516882138797</td>
+                <td class="value right">MALE</td>
+            </tr>
+        </table>
 
-            </div>
-            <div class="info-cell center">
-                <div class="label">REGISTRATION OFFICE</div>
-
-            </div>
-            <div class="info-cell right">
-                <div class="label">ISSUANCE DATE</div>
-
-            </div>
-        </div>
-
-        <div class="info-grid">
-            <div class="info-cell">
-
-                <div class="value">11 FEBRUARY 2019</div>
-            </div>
-            <div class="info-cell center">
-
-                <div class="value">MANDA UNIONPARISAD</div>
-            </div>
-            <div class="info-cell right">
-
-                <div class="value">11 FEBRUARY 2019</div>
-            </div>
-        </div>
-
-
-        <div class="info-grid">
-            <div class="info-cell">
-                <div class="label">DATE OF BIRTH</div>
-
-            </div>
-            <div class="info-cell center">
-                <div class="label">BIRTH REGISTRATION NUMBER</div>
-
-            </div>
-            <div class="info-cell right">
-                <div class="label">SEX</div>
-
-            </div>
-        </div>
-
-
-        <div class="info-grid">
-            <div class="info-cell">
-
-                <div class="value">14 MAY 1995</div>
-            </div>
-            <div class="info-cell center">
-
-                <div class="value">19952516882138797</div>
-            </div>
-            <div class="info-cell right">
-
-                <div class="value">MALE</div>
-            </div>
-        </div>
-
-
-        <div class="info-row">
-            <div class="info-cell-alt label bengali">নিবন্ধিত ব্যক্তির নাম</div>
-            <div class="info-cell-alt value bengali">মোঃ মারুফ বিল্লা</div>
-            <div class="info-cell-alt label">REGISTERED PERSON NAME</div>
-            <div class="info-cell-alt value">MARUF BILLA</div>
-        </div>
-
-        <div class="info-row">
-            <div class="info-cell label bengali">জন্মস্থান</div>
-            <div class="info-cell value bengali">১৭০৭, উত্তর মাজা, ওয়ার্ড নং-০৪, পোঃ-মাজা, থানা-মুগদা, জেলা-ঢাকা-১২১৪।
-            </div>
-            <div class="info-cell label">PLACE OF BIRTH</div>
-            <div class="info-cell value">DHAKA</div>
-        </div>
-
-        <div class="info-row">
-            <div class="info-cell-alt label bengali">মাতার নাম</div>
-            <div class="info-cell-alt value bengali">গোল নাহার</div>
-            <div class="info-cell-alt label">MOTHER'S NAME</div>
-            <div class="info-cell-alt value">GOL NAHAR</div>
-        </div>
-
-        <div class="info-row">
-            <div class="info-cell label bengali">মাতার জাতীয়তা</div>
-            <div class="info-cell value bengali">বাংলাদেশী</div>
-            <div class="info-cell label">MOTHER'S NATIONALITY</div>
-            <div class="info-cell value">BANGLADESHI</div>
-        </div>
-
-        <div class="info-row">
-            <div class="info-cell-alt label bengali">পিতার নাম</div>
-            <div class="info-cell-alt value bengali">মোঃ তমিজ উদ্দিন</div>
-            <div class="info-cell-alt label">FATHER'S NAME</div>
-            <div class="info-cell-alt value">TOMIJ</div>
-        </div>
-
-        <div class="info-row">
-            <div class="info-cell label bengali">পিতার জাতীয়তা</div>
-            <div class="info-cell value bengali">বাংলাদেশী</div>
-            <div class="info-cell label">FATHER'S NATIONALITY</div>
-            <div class="info-cell value">BANGLADESHI</div>
-        </div>
+        <!-- Additional info table for Bengali and English details -->
+        <table class="info-table-info">
+            <tr>
+                <td class="label bengali">নিবন্ধিত ব্যক্তির নাম</td>
+                <td class="value bengali">মোঃ মারুফ বিল্লা</td>
+                <td class="label">REGISTERED PERSON NAME</td>
+                <td class="value">MARUF BILLA</td>
+            </tr>
+            <tr>
+                <td class="label bengali">জন্মস্থান</td>
+                <td class="value bengali">১৭০৭, উত্তর মাজা, ওয়ার্ড নং-০৪, পোঃ-মাজা, থানা-মুগদা, জেলা-ঢাকা-১২১৪।</td>
+                <td class="label">PLACE OF BIRTH</td>
+                <td class="value">DHAKA</td>
+            </tr>
+            <tr>
+                <td class="label bengali">মাতার নাম</td>
+                <td class="value bengali">গোল নাহার</td>
+                <td class="label">MOTHER'S NAME</td>
+                <td class="value">GOL NAHAR</td>
+            </tr>
+            <tr>
+                <td class="label bengali">মাতার জাতীয়তা</td>
+                <td class="value bengali">বাংলাদেশী</td>
+                <td class="label">MOTHER'S NATIONALITY</td>
+                <td class="value">BANGLADESHI</td>
+            </tr>
+            <tr>
+                <td class="label bengali">পিতার নাম</td>
+                <td class="value bengali">মোঃ তমিজ উদ্দিন</td>
+                <td class="label">FATHER'S NAME</td>
+                <td class="value">TOMIJ</td>
+            </tr>
+            <tr>
+                <td class="label bengali">পিতার জাতীয়তা</td>
+                <td class="value bengali">বাংলাদেশী</td>
+                <td class="label">FATHER'S NATIONALITY</td>
+                <td class="value">BANGLADESHI</td>
+            </tr>
+        </table>
 
         <img src="./img/qr.png" alt="Verification QR Code" class="qr-code">
-
         <div class="note">
-            <span>
-                NB:This record is retrived from Birth and Death Registration Database.
-            </span> Location of the Register office :
-            <span class="italic">
-                MANDA, TEJGAON DEVELOPMENT CIRCLE, DHAKA.
-            </span>
-            <a href="https://everify.bdris.gov.bd">everify.bdris.gov.bd</a> is the official website to verify the record
+            <span>NB: This record is retrieved from Birth and Death Registration Database.</span> Location of the
+            Register
+            office:
+            <span class="italic">MANDA, TEJGAON DEVELOPMENT CIRCLE, DHAKA.</span>
+            <a href="https://everify.bdris.gov.bd">everify.bdris.gov.bd</a> is the official website to verify the
+            record.
         </div>
 
         <div class="footer">
